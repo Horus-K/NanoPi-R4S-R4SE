@@ -17,7 +17,7 @@ on:
   #   types: started
 
 env:
-  REPO_URL: https://github.com/DHDAXCW/lede-rockchip
+  REPO_URL: https://github.com/Horus-K/lede-rockchip
   REPO_BRANCH: stable
   CONFIG_FILE: configs/lean/lean.config
   DIY_SH: scripts/lean.sh
@@ -27,7 +27,7 @@ env:
 
 jobs:
   Build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
